@@ -29,6 +29,10 @@ customList <- c("Sean12697","SteveHiltonCEO","ruby_gem","RebeccaWho","ThatGirlVi
 
 Also at the end is a "write.csv" line, which is used to create a csv file produced of the filtered network (ensure you change the name from the default "fileName" to another, to prevent overwrites), which can be used to import into another application like Neo4J.
 
+```
+write.csv(filteredNetwork, file = paste("fileName", ".csv", sep =""), row.names=FALSE)
+```
+
 ## Recommendation
 
 The graph will load in a small window, to fix this change the size of it or make it full screen, then go into the layout option in the menu and select any graphing method, I find Kamada-Kawai is best 70% of the time, then 25% of the time Fruchterman-Reingold.
